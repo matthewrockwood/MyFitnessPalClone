@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piiproject.Controller.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="riceCakeButton" mnemonicParsing="false" onAction="#addRiceCake" prefHeight="86.0" prefWidth="187.0" text="Rice Cake" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="bananaButton" mnemonicParsing="false" onAction="#addBanana" prefHeight="86.0" prefWidth="170.0" text="Banana" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="bagRiceButton" mnemonicParsing="false" onAction="#addBagRice" prefHeight="86.0" prefWidth="196.0" text="Bag Rice" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="yogurtButton" mnemonicParsing="false" onAction="#addYogurt" prefHeight="86.0" prefWidth="170.0" text="Yogurt" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="grilledChickenButton" mnemonicParsing="false" onAction="#addGrilledChx" prefHeight="90.0" prefWidth="157.0" text="Grilled Chicken Cutlet" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rigVodkaButton" mnemonicParsing="false" onAction="#addRigVodka" prefHeight="100.0" prefWidth="171.0" text="Rigatoni Vodka" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="steakButton" mnemonicParsing="false" onAction="#addSteak" prefHeight="92.0" prefWidth="151.0" text="1lb Steak" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="groundTurkeyButton" mnemonicParsing="false" onAction="#addGroundTurkey" prefHeight="105.0" prefWidth="187.0" text="1/2 LB Ground Turkey" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="pizzaButton" mnemonicParsing="false" onAction="#addPizza" prefHeight="87.0" prefWidth="166.0" text="Pizza Slice" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="proteinShakeButton" mnemonicParsing="false" onAction="#addProteinShake" prefHeight="105.0" prefWidth="175.0" text="Protein Shake" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font name="Bodoni MT Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="calculateButton" mnemonicParsing="false" onAction="#Calculate" prefHeight="90.0" prefWidth="173.0" text="Calculate" underline="true" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="herobreadButton" mnemonicParsing="false" onAction="#addHeroBread" prefHeight="86.0" prefWidth="196.0" text="Hero Bread" GridPane.rowIndex="6">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="mixedSaladButton" mnemonicParsing="false" onAction="#addMixedSalad" prefHeight="86.0" prefWidth="196.0" text="Mixed Salad" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Carbs" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Protein" underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kcals" underline="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+      <Text fx:id="fcarbs" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Text fx:id="fprotein" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+      <Text fx:id="fkcals" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fat" underline="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+      <Text fx:id="ffat" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="BOTTOM" />
+      <Text fx:id="savedText" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Saved!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+      <Button fx:id="saveButton" mnemonicParsing="false" onAction="#Save" prefHeight="88.0" prefWidth="174.0" text="Save" textAlignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP">
+         <font>
+            <Font name="Bodoni MT Bold" size="28.0" />
+         </font>
+      </Button>
+      <TextField fx:id="date" alignment="CENTER" prefHeight="83.0" prefWidth="150.0" promptText="00/00/0000" GridPane.columnIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Todays Date" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="135.8689422607422" endY="-40.424041748046875" startX="-49.423954010009766" startY="-40.4239501953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="TOP" />
+   </children>
+</GridPane>
